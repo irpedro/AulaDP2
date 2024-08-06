@@ -11,6 +11,8 @@ public class Main {
         char[][] array;
         char[][] array2;
 
+        int field = 1;
+
         while (true) {
             int n = sc.nextInt();
             int m = sc.nextInt();
@@ -51,13 +53,13 @@ public class Main {
                 }
             }
 
+            System.err.println("Field #" + field + ":");
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < m; j++) {
                     System.out.print(array2[i][j] + " ");
                 }
                 System.out.println();
             }
-
         }
         
     sc.close();
